@@ -77,13 +77,14 @@ a {
   background-image: radial-gradient(rgba(255,200,200,0.5), rgba(255,150,200,0), rgba(255,150,200,0));
 }
 .sun-beam-1 {
-  height: 50px;
+  height: 175px;
   width: 0px;
-  padding-left: 50px;
+  padding-left: 175px;
+  z-index: 1;
 
   position: fixed;
-  top: 24vh;
-  left: 57vw;
+  top: 20vh;
+  left: 52vw;
   border-radius: 50%;
   background-image: radial-gradient(rgba(255,255,255,0.5), rgba(255,150,200,0));
 }
@@ -91,6 +92,7 @@ a {
   height: 24px;
   width: 0px;
   padding-left: 24px;
+  z-index: 2;
 
   position: fixed;
   top: 30vh;
@@ -102,6 +104,7 @@ a {
   height: 200px;
   width: 0px;
   padding-left: 200px;
+  z-index: 3;
 
   position: fixed;
   top: 22vh;
@@ -113,6 +116,7 @@ a {
   height: 100px;
   width: 0px;
   padding-left: 100px;
+  z-index: 4;
 
   position: fixed;
   top: 32vh;
@@ -124,6 +128,7 @@ a {
   height: 120px;
   width: 0px;
   padding-left: 120px;
+  z-index: 5;
 
   position: fixed;
   top: 50vh;
@@ -136,6 +141,7 @@ a {
   height: 15px;
   width: 0px;
   padding-left: 15px;
+  z-index: 6;
 
   position: fixed;
   top: 50vh;
@@ -187,6 +193,7 @@ a {
 
 .clicker {
   position: relative;
+  align-self: start;
   display: block;
   width: 90vw;
   margin: 0.5rem 0;
@@ -200,7 +207,7 @@ a {
   text-align: left;
 }
 
-@media (min-width: 751px) {
+@media (min-width: 300px) {
   h1 {
     font-size: 2rem;
   }
@@ -217,7 +224,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 45rem;
+    width: 15rem;
     padding: 0 2rem;
   }
 
@@ -226,13 +233,13 @@ a {
     margin: 1rem 0;
   }
 
-  .sell {
-    position: absolute;
-    left: 94%;
-    top: 50%;
-    padding: 0.2rem 0.51rem;
-    border-color: red;
-    border-radius: 2rem;
-    outline: none;
-  }
+  /*.sell {*/
+  /*  position: absolute;*/
+  /*  left: 94%;*/
+  /*  top: 50%;*/
+  /*  padding: 0.2rem 0.51rem;*/
+  /*  border-color: red;*/
+  /*  border-radius: 2rem;*/
+  /*  outline: none;*/
+  /*}*/
 }
