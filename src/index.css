@@ -49,16 +49,99 @@ a {
 }
 
 .sun {
-  height: 250px;
-  width: 250px;
+  height: 500px;
+  width: 0px;
+  padding-left: 500px;
+  z-index: 9;
+
   position: fixed;
   top: -190px;
-  left: 43%;
+  left: 63vw;
   border-radius: 50%;
-  background-color: indianred;
+  /*background-color: indianred;*/
   /*background-image: radial-gradient(indianred, lightpink);*/
-  background-image: radial-gradient(rgba(255,200,200,1), rgba(255,150,200,0));
+  background-image: radial-gradient(rgba(255,200,200,1), rgba(255,175,175,1), rgba(255,150,150,1), rgba(255,150,150,0.5), rgba(255,150,150,0), rgba(255,150,150,0));
   /*background-image: radial-gradient(rgba(255,200,200,0), rgba(255,200,200,1), rgba(255,200,200,0));*/
+}
+
+.sun-halo {
+  height: 500px;
+  width: 0px;
+  padding-left: 500px;
+
+  position: fixed;
+  top: -190px;
+  left: 63vw;
+  border-radius: 50%;
+  /*background-color: indianred;*/
+  background-image: radial-gradient(rgba(255,200,200,0.5), rgba(255,150,200,0), rgba(255,150,200,0));
+}
+.sun-beam-1 {
+  height: 50px;
+  width: 0px;
+  padding-left: 50px;
+
+  position: fixed;
+  top: 24vh;
+  left: 57vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255,255,255,0.5), rgba(255,150,200,0));
+}
+.sun-beam-2 {
+  height: 24px;
+  width: 0px;
+  padding-left: 24px;
+
+  position: fixed;
+  top: 30vh;
+  left: 60vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255,200,200,0.5), rgba(255,150,200,0));
+}
+.sun-beam-3 {
+  height: 200px;
+  width: 0px;
+  padding-left: 200px;
+
+  position: fixed;
+  top: 22vh;
+  left: 53vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255,150,150,0.5), rgba(255,150,200,0));
+}
+.sun-beam-4 {
+  height: 100px;
+  width: 0px;
+  padding-left: 100px;
+
+  position: fixed;
+  top: 32vh;
+  left: 53vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(200,200,150,0.5), rgba(255,150,200,0));
+}
+.sun-beam-5 {
+  height: 120px;
+  width: 0px;
+  padding-left: 120px;
+
+  position: fixed;
+  top: 50vh;
+  left: 40vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255,200,200,0.5), rgba(255,150,200,0));
+}
+
+.floatie-1 {
+  height: 15px;
+  width: 0px;
+  padding-left: 15px;
+
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255,255,255,1), rgba(255,150,200,0), rgba(255,150,200,0));
 }
 
 .buy {
@@ -66,6 +149,7 @@ a {
   width: 90vw;
   margin: 1rem auto;
   padding: 0.5rem;
+  z-index: 10;
   border: 2px solid gray;
   border-radius: 1rem 0;
   font-size: 1rem;
@@ -80,6 +164,7 @@ a {
   right: 1%;
   top: 60%;
   padding: 0.85rem 1.2rem;
+  z-index: 10;
   border-color: red;
   border-radius: 2rem;
   outline: none;
@@ -106,6 +191,7 @@ a {
   width: 90vw;
   margin: 0.5rem 0;
   padding: 0 0.5rem;
+  z-index: 10;
   border: 0.25rem solid gray;
   border-radius: 1rem 0;
 }

@@ -38,7 +38,15 @@ const App = () => {
         {/*  <a href="https://github.com/Alaricus/clicker-tutorial">GitHub</a> */}
         {/*  for more details. */}
         {/* </div> */}
+        {/* Solen og solstrålene kan gjøres bevegelige og fargeskiftende senere. Gjerne i respons til boostere. */}
         <div className="sun"> </div>
+        <div className="sun-halo"> </div>
+        <div className="sun-beam-1"> </div>
+        <div className="sun-beam-2"> </div>
+        <div className="sun-beam-3"> </div>
+        <div className="sun-beam-4"> </div>
+        <div className="sun-beam-5"> </div>
+        <div className="floatie-1"> </div>
         <Clicker amount={state.clicks.amount} dispatch={dispatch} />
         {
           Object.keys(state).map((tier, idx) => {
