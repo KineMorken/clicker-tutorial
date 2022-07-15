@@ -4,6 +4,7 @@ body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
+  background-color: #999999;
 }
 
 h1 {
@@ -30,9 +31,34 @@ a {
   left: 0;
   top: 0;
   width: 100vw;
-  background-color: #ffd007;
+  background-color: indianred;
   padding: 0.75rem 0;
   z-index: 100;
+}
+
+.clickerDiv {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10;
+
+  background-color: cornflowerblue;
+}
+
+.sun {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: -190px;
+  left: 43%;
+  border-radius: 50%;
+  background-color: indianred;
+  /*background-image: radial-gradient(indianred, lightpink);*/
+  background-image: radial-gradient(rgba(255,200,200,1), rgba(255,150,200,0));
+  /*background-image: radial-gradient(rgba(255,200,200,0), rgba(255,200,200,1), rgba(255,200,200,0));*/
 }
 
 .buy {

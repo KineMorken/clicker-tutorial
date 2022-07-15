@@ -29,29 +29,34 @@ const App = () => {
   }, [callback]);
 
   return (
-    <div className="game">
-      <div className="banner">
-        This is an accompanying example to a clicker game tutorial using React. See
-        <a href="https://github.com/Alaricus/clicker-tutorial">GitHub</a>
-        for more details.
+    //   Her har jeg satt inn en clicker-funksjon, som sender inn et click når man trykker på div-en (det som blir bakgrunnen)
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
+    <div className="clickerDiv" onClick={() => dispatch({ type: 'click' })}>
+      <div className="game">
+        {/* <div className="banner"> */}
+        {/*  This is an accompanying example to a clicker game tutorial using React. See */}
+        {/*  <a href="https://github.com/Alaricus/clicker-tutorial">GitHub</a> */}
+        {/*  for more details. */}
+        {/* </div> */}
+        <div className="sun"> </div>
+        <Clicker amount={state.clicks.amount} dispatch={dispatch} />
+        {
+          Object.keys(state).map((tier, idx) => {
+            if (idx === 0) { return null; }
+            const { cost, amount } = state[tier];
+            return (state.clicks.amount >= cost || amount > 0) && (
+              <Autoclicker
+                key={tier}
+                tier={tier}
+                amount={amount}
+                cost={cost}
+                enabled={state.clicks.amount >= cost}
+                dispatch={dispatch}
+              />
+            );
+          })
+        }
       </div>
-      <Clicker amount={state.clicks.amount} dispatch={dispatch} />
-      {
-        Object.keys(state).map((tier, idx) => {
-          if (idx === 0) { return null; }
-          const { cost, amount } = state[tier];
-          return (state.clicks.amount >= cost || amount > 0) && (
-            <Autoclicker
-              key={tier}
-              tier={tier}
-              amount={amount}
-              cost={cost}
-              enabled={state.clicks.amount >= cost}
-              dispatch={dispatch}
-            />
-          );
-        })
-      }
     </div>
   );
 };
