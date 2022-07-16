@@ -73,6 +73,7 @@ const App = () => {
         <div className="sun-beam-5"> </div>
         {/* Vi kan senere kjøpe floaties, som gir en boost. Man kan velge hvor mange som skal vises? */}
         <div className="floatie-1"> </div>
+        <div className="unicorn-1"> </div>
         <Clicker amount={state.clicks.amount} dispatch={dispatch} />
         {
           Object.keys(state).map((tier, idx) => {

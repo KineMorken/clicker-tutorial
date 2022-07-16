@@ -150,6 +150,15 @@ a {
   background-image: radial-gradient(rgba(255,255,255,1), rgba(255,150,200,0), rgba(255,150,200,0));
 }
 
+.unicorn-1 {
+  height: 100px;
+  width: fit-content;
+  top: 50vh;
+  left: 50vh;
+  z-index: 10;
+  background-image: image("../public/Unicorns/1 - unicorn.png");
+}
+
 .buy {
   display: block;
   width: 90vw;
